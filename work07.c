@@ -23,15 +23,15 @@ double avgArr (int* arr, int length) {
 
 void copyArr (int* arr, int* arr2, int length) {
 	int x;
-   for (x = 0; x < 10; x++) {
+   for (x = 0; x < length; x++) {
       *(arr2+x) = *(arr+x);
    }
-} 
+}
 
 int main() {
 	int arr[10];
 	int arr2[10];
-	
+
    int i;
    for(i = 0; i < 10; i++) {
       arr[i] = i;
@@ -40,11 +40,11 @@ int main() {
    printf("1.\n");
    printArr(arr, 10);
    printf("\n");
-   
+
    printf("2.\n");
    printf("%0.3lf \n", avgArr(arr, 10));
    printf("\n");
-   
+
    printf("3.\n");
    printf("Before copy:\n");
    printArr(arr, 10);
@@ -54,6 +54,3 @@ int main() {
    printArr(arr, 10);
    printArr(arr2, 10);
 }
-
-
-
